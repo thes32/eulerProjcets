@@ -1,0 +1,22 @@
+package sum2Diff;
+import java.util.*;
+
+public class main {
+    static int target, sum1, sum2;
+    
+    public static void main(String[] args) {
+        for (int i = 1; i < 101; i++) {
+            sum1 += i * i;
+        }
+        
+        for (int i = 1; i < 101; i++) {
+            sum2 += i;
+        }
+        sum2 *= sum2;
+        
+        target = sum2 - sum1;
+        
+        System.out.println(target);
+    }
+    
+}
